@@ -1,0 +1,40 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;%SUBLIME%;%FLOW%;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\André\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Sublime Text 3;C:\Users\André\Google Drive\Projetos\janeroupas\node_modules\.bin\flow;C:\Users\André\AppData\Local\atom\bin;C:\Users\André\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Heroku\bin;C:\Users\André\AppData\Local\Yarn\bin\;C:\WINDOWS\system32\find;C:\Users\André\AppData\Local\GitHubDesktop\bin;C:\Users\André\AppData\Roaming\npm
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  10.6.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "quickDraw_svg",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "André Hoffmann",
+    "license": "MIT",
+    "scripts": {
+      "start": "cd quick_draw_dataset_tests && yarn start",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: C:\Users\André\Projetos\OUTROS\quickDraw_svg\package.json: Unexpected token } in JSON at position 198
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:92:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:103:13
