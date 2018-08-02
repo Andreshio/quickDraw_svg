@@ -1,0 +1,11 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+/quick_draw_dataset_tests/node_modules
+/quick_draw_dataset_tests/node_modules
+/quick_draw_dataset_tests/coverage
+/quick_draw_dataset_tests/build
+/quick_draw_dataset_tests/npm-debug.log*
+/quick_draw_dataset_tests/yarn-debug.log*
+/quick_draw_dataset_tests/yarn-error.log*
+
+/quick_draw_dataset_tests_node/node_modules
