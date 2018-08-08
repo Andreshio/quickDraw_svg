@@ -21,7 +21,6 @@ class App extends Component {
     }
     const response = await fetch("http://localhost:4000/", config).catch(err=>console.log(err.message));
     const _json = await response.json();
-    console.log(_json[0]);
     this.setState({data: _json});    
   }
   changeDrawing = (event) => {
@@ -39,7 +38,7 @@ class App extends Component {
         <div style={{padding: 30}}>
           {
             this.state.data&&
-              <Drawing height={500} width={960} data={this.state.data[this.state.selectedDrawing]} />
+              <Drawing data={this.state.data[this.state.selectedDrawing]} />
           }
         </div>
         <h1>was recognized: {

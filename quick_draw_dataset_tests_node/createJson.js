@@ -13,7 +13,7 @@ const parseSimplifiedDrawings = (fileName, callback) => {
     .on("end", ()=>callback(null, drawings));
 }
 
-parseSimplifiedDrawings('data/mouth.ndjson', (err, drawings) => {
+parseSimplifiedDrawings('data/eye.ndjson', (err, drawings) => {
     console.log("before")
     if(err) {
       console.log(err); 
