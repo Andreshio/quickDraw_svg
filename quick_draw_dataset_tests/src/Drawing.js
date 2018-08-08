@@ -53,7 +53,7 @@ class Drawing extends Component {
 	render = () => (
         <svg
         	//onClick={this.close}
-        	style={{background: 'red'}}
+        	//style={{background: 'red'}}
             width={this.props.width?this.props.width:255}
             height={this.proportionize(this.state.maxY)}//this.state.height}
         >

@@ -5,7 +5,8 @@ const cors = require('cors');
 
 const app = express()
 
-const data = require('./data/eye.json')
+const eyes = require('./data/eye.json')
+const mouths = require('./data/mouth.json')
 /*
 
 const parseSimplifiedDrawings = (fileName, callback) => {
@@ -27,7 +28,17 @@ app.use( cors({origin: '*'}) );
 
 app.get('/', (req, res) => {
 
-  res.send(data);
+  const indexes = {
+    rightEye: Math.floor(Math.random()*eyes.length),
+    leftEye: Math.floor(Math.random()*eyes.length),
+    mouth: Math.floor(Math.random()*mouths.length),
+  }
+
+  const rightEye = eyes[ indexes.rightEye ];
+  const leftEye = eyes[ indexes.leftEye ]
+  const mouth = mouths[ indexes.mouth ]
+
+  res.send({rightEye, leftEye, mouth, indexes});
 /*
   console.log("CALLED");
 
