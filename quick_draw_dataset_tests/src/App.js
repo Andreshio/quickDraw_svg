@@ -48,7 +48,7 @@ class App extends Component {
         <button onClick={this.getData}> Get Data </button>
         <br/>
         Escolha o desenho: <input type="number" value={this.state.selectedDrawing} onChange={this.changeDrawing}/>
-        <div style={{padding: 30}}>
+        <div style={{padding: 30, display: 'flex', justifyContent: 'center'}}>
                     
           {
             this.state.mouth&&

@@ -5,8 +5,8 @@ const cors = require('cors');
 
 const app = express()
 
-const eyes = require('./data/eye.json')
-const mouths = require('./data/mouth.json')
+const eyes = require('./data/filteredEyes.json');
+const mouths = require('./data/filteredMouths.json');
 /*
 
 const parseSimplifiedDrawings = (fileName, callback) => {
